@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blog_page.css">
+</head>
+<body>
+    <div class="log-in-form-bg" style="display: none;">
+    </div>
+    <div class="log-in-form" style="display: none;">
+        <img src="./images/add.svg" alt="add" id="add">
+        <div class="log-in-success" style="display: none;">
+            <img src="./images/tick-circle.svg" alt="tick" style="width: 64px; height: 64px; flex-shrink: 0; margin-bottom: 5px;">
+            <h3 style="font-size: 24px; font-weight: 700; line-height: 32px; margin: 0; margin-bottom: 30px;">წარმატებული ავტორიზაცია</h3>
+            <button class="submit" style="margin-top: 30px;">კარგი</button>
+        </div>
+        <div class="log-in-input">
+            <h3 style="font-size: 24px; font-weight: 700; line-height: 32px; margin: 0; margin-bottom: 30px;">შესვლა</h3>
+            <div class="mail-input">
+                <label for="mail" style="font-size: 14px; font-weight: 500;">ელ-ფოსტა</label>
+                <input type="email" id="mail">
+                <div class="error" style="display: none;">
+                    <img src="./images/info-circle.svg" alt="info"> 
+                    <p id="error-text" style="font-size: 12px;">ელ-ფოსტა არ მოიძებნა</p>
+                </div>
+                <button class="submit" style="margin-top: 40px;">შესვლა</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <img src="./images/LOGO-02 3.png" alt="redberry" style="margin-left: 72px;">
+        <button id="log-in-btn">შესვლა</button>
+        <button onclick="location.href = './new_blog.html';" style="display: none;" id="create-blog">ბლოგის შექმნა</button>
+    </header>
+    <div id="blog-page">
+        <a href="./index.html" class="back-page"><img src="./images/Arrow.svg" alt="arrow"></a>
+        <div id="chosen-blog">
+            
+        </div> 
+        <div class="slider">
+            <div class="splide">
+                <div class="splide__arrows">
+                    <h2> მსგავსი სტატიები </h2>
+                </div>
+                <div class="splide__track">
+                    <div class="splide__list">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="blog_page.js"></script>
+</body>
+</html>
